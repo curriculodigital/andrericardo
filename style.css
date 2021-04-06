@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color:black;
+    /* color:rgb(1, 10, 8);  */
+    text-shadow:2px 2px white;
+    font-size: 3rem;
+    text-align: center;
+}
+header{
+    background-color: rgb(0, 0, 0);
+    height: 9vh;
+}
+header h1{
+    color: rgb(38, 38, 141);
+    text-shadow:2px 2px rgb(117, 163, 165);
+
+}
+.bg, footer{
+ background: linear-gradient(blueviolet,violet,gray);
+ padding-bottom: 5px;
+
+}
+
+.containner{
+    display: flex;
+    padding: 20px;
+
+}
+
+img{
+    width: 333px;
+    height: 500px;
+    border-radius: 10%;
+    margin-right:30px;
+}
+.me p{
+    color:rgb(24, 10, 88);
+    font-size: 1.5em;
+    padding: 20px;
+}
+.portifolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.trabalhos{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100px;
+    margin: 80px;
+
+}
+.trabalhos img{
+    width: 300px;
+    min-width: 300px;
+    height: 200px;
+    min-height: 200px;
+    transition: 2s;
+}
+.historicoProf{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.empresas img{
+    width: 100px;
+    height: 80px;
+    margin: 5px 100px;
+    box-shadow: 6px 5px  gray;
+    border-radius: 0;
+    cursor: pointer;
+    transition: 3s;
+}
+.empresas{
+    background: rgb(169, 166, 173);
+
+}
+.empresas p{
+    font-size: large;
+    font-style: italic;
+    margin: 10px;
+}
+.resumo{
+    display: none;
+    padding: 0px 40px;
+    transition: 10s;
+}
+footer{
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+}
+footer img{
+    margin-top: 14px;
+    width: 50px;
+    height: 40px;
+    align-content: baseline;
+}
+.trabalhos img:hover{
+    transform: scale(1.5);
+}
+.empresas img:hover{
+    transform: rotate(360deg);
+}
+a{text-decoration: none;
+}
+
+@media (max-width:799px) {
+
+h1{
+    display: flex;
+    flex-direction: column;
+}
+.containner{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    padding-top: 4%;
+    font-size: 2em;
+    text-decoration: none;
+    
+}
+.empresas img{
+    width: 50%;
+    height: 50%;
+    box-shadow: 6px 5px  gray;
+    border-radius: 0;
+    cursor: pointer;
+    transition: 1s;
+}
+
+}
